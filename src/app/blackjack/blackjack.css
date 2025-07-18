@@ -1,0 +1,108 @@
+.body {
+    display: flex;
+    justify-content: center;
+    /* Horizontal center */
+    align-items: center;
+    height: 100vh;
+
+}
+
+.blackjack{
+    display: flex;
+}
+
+.game {
+    justify-items: center;
+    min-height: 300px;
+    min-width: 350px;
+    border: 2px solid;
+    padding-bottom: 20px;
+    padding-inline: 20px;
+    background-color: rgba(0, 128, 0, 0.658);
+}
+
+.layout {
+    justify-items: center;
+    height: 300px;
+    width: 350px;
+    border: 2px solid;
+    padding-bottom: 20px;
+    padding-inline: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.gameInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    justify-items: space-between;
+    margin: 20px;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+.gameInfo p {
+    margin: 0%;
+}
+
+.playerPoints{
+    border-radius: 4px;
+    background-color: black;
+    color: rgb(0, 255, 0);
+    padding: 5px;
+}
+
+.dealerPoints{
+    border-radius: 4px;
+    background-color: rgb(0, 0, 0);
+    color: red;
+    padding: 5px;
+}
+
+.dealer {
+    display: flex;
+    min-height: 129px;
+    min-width: 312px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: green;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.player {
+    display: flex;
+    min-height: 129px;
+    min-width: 312px;
+    justify-content: space-between;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card {
+    border: white solid 2px;
+    border-radius: 4px;
+    height: 125px;
+    width: 80px;
+    align-content: center;
+}
+
+.card p {
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 80px;
+    margin: 0%;
+
+}
+
+.card:hover {
+    cursor: pointer;
+    width: 94px;
+    height: 139px;
+}

@@ -1,0 +1,62 @@
+<div>
+    
+</div>
+<div class="body">
+    <div class="blackjack">
+        <div class="game">
+            <h2>Blackjack Game!</h2>
+
+            <div class="dealer">
+                @for (card of dealerHand(); track $index) {
+
+                <div class="card">
+                    <p>{{ card }}</p>
+                </div>
+
+                }
+            </div>
+
+            <div class="player">
+                @for (card of playerHand(); track $index) {
+                <div class="card">
+                    <p>{{ card }}</p>
+                </div>
+                }
+            </div>
+
+            <div class="gameInfo">
+                <div class="playerPoints">
+                    <p>Your hand: {{playerTotal}}</p>
+                </div>
+                @if (message) {
+                <div class="playerPoints">
+                    <p>{{message}}</p>
+                </div>
+                }
+                <div class="dealerPoints">
+                    <p>Dealer hand: {{dealerTotal}}</p>
+                </div>
+            </div>
+
+            <div>
+                <button (click)="hit()">Hit</button>
+                <button (click)="stand()">Stand</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-left: 20px;">
+
+    </div>
+
+    <div>
+        <div class="layout">
+            <h3>Rules:</h3>
+            <div class="scoreList">
+                <p>The objective is get closest to number 21 but you can just take a max of 4 cards and use 2 draws to
+                    change the 3 cards values. The player who gets closer wins.</p>
+            </div>
+        </div>
+    </div>
+</div>
